@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: #333 url('https://via.placeholder.com/1500x600') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    background: #007BFF;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .cta-button:hover {
+    background: #0056b3;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .topics, .benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .topics li, .benefits li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .topics li::before, .benefits li::before {
+    content: "✔";
+    color: #007BFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Get Started Section */
+  .get-started {
+    background: #f8f8f8;
+    padding: 60px 20px;
+  }
+  
+  .get-started p {
+    margin: 20px 0;
+  }
+  
+  .get-started .cta-button {
+    background: #28a745;
+    font-size: 1.2rem;
+  }
+  
+  .get-started .cta-button:hover {
+    background: #218838;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      padding: 12px 20px;
+      font-size: 0.9rem;
+    }
+  
+    section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .topics, .benefits {
+      padding: 0 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 40px 15px;
+    }
+  
+    .hero h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero p {
+      font-size: 0.9rem;
+    }
+  
+    .cta-button {
+      padding: 10px 15px;
+      font-size: 0.8rem;
+    }
+  
+    section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .topics li, .benefits li {
+      padding-left: 15px;
+    }
+  
+    .topics li::before, .benefits li::before {
+      left: 0;
+    }
+  }
+  
